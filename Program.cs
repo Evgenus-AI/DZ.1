@@ -6,9 +6,12 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            string a = "Мир Труд Май";
-            Console.WriteLine(a);
-            Console.WriteLine("Мир\n\tТруд\n\t\tМай");
+            int a = 10;
+            int b = 20;
+            (a, b) = (b, a);
+            Console.WriteLine(a); 
+            Console.WriteLine(b);
+
         }
     }
 }
