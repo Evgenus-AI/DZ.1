@@ -6,10 +6,13 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            int a = 50;
-            int b = 10;
-            Console.WriteLine(a);
-            Console.WriteLine(b);
+            Random random = new Random();
+            for (int i = 0; i < 4; i++)
+            {
+
+                int randomNumber = random.Next(1, 101);
+                Console.WriteLine(randomNumber);
+            }
         }
     }
 }
