@@ -6,9 +6,9 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            int b = a + 10;
-            Console.WriteLine(b);
+            double x = Math.PI;
+            double y = Math.Cos(x);
+            Console.WriteLine(y);
         }
     }
 }
