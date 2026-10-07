@@ -6,12 +6,17 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            int x1 = 10;
-            int x2 = 20;
-            int y1 = 10;
-            int y2 = 20;
-            double d = Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2));
-            Console.WriteLine(d);
+            int a = 10;
+            int b = 20;
+            int c = 30;
+            (a, b, c) = (b, c, a);
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+            (a,b,c) = (c,a,b);
+            Console.WriteLine(a);  
+            Console.WriteLine(b);
+            Console.WriteLine(c);
         }
     }
 }
