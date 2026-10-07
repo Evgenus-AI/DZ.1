@@ -6,12 +6,12 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            int a = 5;
-            int b = 11;
-            int c = (a+b)/2;
-            double d = Math.Sqrt(a*b);
-            Console.WriteLine($"Среднее арифметическое: {c}");
-            Console.WriteLine($"Среднее геометрическое: {d}");
+            int x1 = 10;
+            int x2 = 20;
+            int y1 = 10;
+            int y2 = 20;
+            double d = Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2));
+            Console.WriteLine(d);
         }
     }
 }
