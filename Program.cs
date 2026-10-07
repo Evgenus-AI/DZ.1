@@ -6,17 +6,14 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            int a = 10;
-            int b = 20;
-            int c = 30;
-            (a, b, c) = (b, c, a);
-            Console.WriteLine(a);
-            Console.WriteLine(b);
-            Console.WriteLine(c);
-            (a,b,c) = (c,a,b);
-            Console.WriteLine(a);  
-            Console.WriteLine(b);
-            Console.WriteLine(c);
+            int a = int.Parse(Console.ReadLine());
+            int h = a / 3600;
+            int m = (a%3600) / 60;
+            int s = a % 60;
+            Console.WriteLine(h);
+            Console.WriteLine(m);
+            Console.WriteLine(s);
+
         }
     }
 }
