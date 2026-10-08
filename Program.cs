@@ -6,14 +6,17 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            int d = 543;
-            int s = 130;
-            int k = 130;
-            int c1 = d / k;
-            int c2 = s / k;
-            int rep = c1 * c2;
-
-            Console.WriteLine($"Можно отрезать квадратов: {rep}");
+            Console.Write("Введите трехзначное число: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            if (number < 100 || number > 999)
+            {
+                Console.WriteLine("Ошибка! Число должно быть трехзначным.");
+                return;
+            }
+            int last = number % 10;  
+            int fisrt= number / 10;  
+            int result = (last * 100) + fisrt;
+            Console.WriteLine($"Полученное число: {result}");
         }
     }
 }
