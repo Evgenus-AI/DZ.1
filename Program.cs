@@ -6,14 +6,14 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            int h = a / 3600;
-            int m = (a%3600) / 60;
-            int s = a % 60;
-            Console.WriteLine(h);
-            Console.WriteLine(m);
-            Console.WriteLine(s);
+            int d = 543;
+            int s = 130;
+            int k = 130;
+            int c1 = d / k;
+            int c2 = s / k;
+            int rep = c1 * c2;
 
+            Console.WriteLine($"Можно отрезать квадратов: {rep}");
         }
     }
 }
