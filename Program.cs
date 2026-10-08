@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 
 namespace FirstApp
 {
@@ -6,17 +7,19 @@ namespace FirstApp
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите трехзначное число: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            if (number < 100 || number > 999)
+            Console.Write("Введите число: ");
+            int  a = int.Parse(Console.ReadLine());
+            if (a<999)
             {
-                Console.WriteLine("Ошибка! Число должно быть трехзначным.");
+                Console.WriteLine("Число должно быть больше чем 999");
                 return;
             }
-            int last = number % 10;  
-            int fisrt= number / 10;  
-            int result = (last * 100) + fisrt;
-            Console.WriteLine($"Полученное число: {result}");
+
+            int s = (a / 100)%10;
+            int t = (a/1000)%10;
+            Console.WriteLine(t);
+            Console.WriteLine(s);
+
         }
     }
 }
